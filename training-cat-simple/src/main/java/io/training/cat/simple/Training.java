@@ -10,11 +10,12 @@ public class Training {
 		int i = 0;
 		while(true) {
 			Transaction t = null;
+			i = i++ % 10;
 			try {
-				t = Cat.getProducer().newTransaction("URL====", "/helloworld");
+				t = Cat.getProducer().newTransaction("URL====", "/helloworld"+i);
 				System.out.println("======================");
 				t.setStatus(Message.SUCCESS);
-				t.addData("============vadf");
+				t.addData("============vadf" + i);
 				Cat.getProducer().newEvent("Training", i++ + "======");
 				Thread.sleep(2000);
 				t.complete();
