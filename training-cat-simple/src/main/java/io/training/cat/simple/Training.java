@@ -1,6 +1,7 @@
 package io.training.cat.simple;
 
 import com.dianping.cat.Cat;
+import com.dianping.cat.message.Event;
 import com.dianping.cat.message.Message;
 import com.dianping.cat.message.Transaction;
 
@@ -16,9 +17,11 @@ public class Training {
 				System.out.println("======================");
 				t.setStatus(Message.SUCCESS);
 				t.addData("============vadf" + i);
-				Cat.getProducer().newEvent("Training", i++ + "======");
+				Event cate = Cat.getProducer().newEvent("Training", i++ + "======");
 				Thread.sleep(2000);
 				t.complete();
+				cate.setStatus(Message.SUCCESS);
+				cate.complete();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			} catch (Exception e) {
