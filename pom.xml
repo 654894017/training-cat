@@ -34,7 +34,11 @@
 		<resteasy-jaxrs.version>3.0.7.Final</resteasy-jaxrs.version>
 		<resteasy-jackson-provider.version>3.0.7.Final</resteasy-jackson-provider.version>
 		<resteasy-jaxb-provider.version>3.0.7.Final</resteasy-jaxb-provider.version>
+		<resteasy-netty.version>3.0.7.Final</resteasy-netty.version>
+		<resteasy-client.version>3.0.7.Final</resteasy-client.version>
 		<validation-api.version>1.1.0.Final</validation-api.version>
+		<httpcore.version>4.3.3</httpcore.version>
+		<zkclient.version>0.1</zkclient.version>
 	</properties>
 	<modules>
 		<module>training-cat-simple</module>
@@ -70,9 +74,24 @@
 						<artifactId>spring-web</artifactId>
 						<groupId>org.springframework</groupId>
 					</exclusion>
+					<exclusion>
+						<artifactId>aopalliance</artifactId>
+						<groupId>aopalliance</groupId>
+					</exclusion>
+					<exclusion>
+						<artifactId>httpclient</artifactId>
+						<groupId>org.apache.httpcomponents</groupId>
+					</exclusion>
+					<exclusion>
+						<artifactId>httpcore</artifactId>
+						<groupId>org.apache.httpcomponents</groupId>
+					</exclusion>
+					<exclusion>
+						<artifactId>javax.servlet-api</artifactId>
+						<groupId>javax.servlet</groupId>
+					</exclusion>
 				</exclusions>
 			</dependency>
-
 			<dependency>
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-jaxrs</artifactId>
@@ -101,7 +120,51 @@
 				<version>${validation-api.version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>${cglib.version}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>asm</artifactId>
+						<groupId>org.ow2.asm</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<!-- zookeeper start -->
+			<dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>${zookeeper.version}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>slf4j-log4j12</artifactId>
+						<groupId>org.slf4j</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpcore</artifactId>
+				<version>${httpcore.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.sgroschupf</groupId>
+				<artifactId>zkclient</artifactId>
+				<version>${zkclient.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-netty</artifactId>
+				<version>${resteasy-netty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-client</artifactId>
+				<version>${resteasy-client.version}</version>
+			</dependency>
 		</dependencies>
+
 	</dependencyManagement>
 
 	<build>

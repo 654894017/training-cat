@@ -17,10 +17,6 @@
 	<properties>
 		<!-- 项目启动指定的启动类 -->
 		<start-class>boot.dubbo.web.ApplicationBootstrap</start-class>
-		<servlet.version>3.1.0</servlet.version>
-		<asm.version>5.0.3</asm.version>
-		<cglib.version>3.1</cglib.version>
-		<zookeeper.version>3.4.6</zookeeper.version>
 	</properties>
 
 	<dependencies>
@@ -57,7 +53,6 @@
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
-			<version>4.3.3</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -68,13 +63,6 @@
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
-			<version>${cglib.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>asm</artifactId>
-					<groupId>org.ow2.asm</groupId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<!-- aspectj相关jar包 -->
 		<dependency>
@@ -89,18 +77,10 @@
 		<dependency>
 			<groupId>org.apache.zookeeper</groupId>
 			<artifactId>zookeeper</artifactId>
-			<version>3.4.6</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>slf4j-log4j12</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.github.sgroschupf</groupId>
 			<artifactId>zkclient</artifactId>
-			<version>0.1</version>
 		</dependency>
 		<!-- zookeeper end -->
 
@@ -111,12 +91,10 @@
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-netty</artifactId>
-			<version>3.0.7.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-client</artifactId>
-			<version>3.0.7.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
