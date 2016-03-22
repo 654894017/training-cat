@@ -12,6 +12,8 @@
 	<name>training-cat-dubbo-provider</name>
 	<url>http://maven.apache.org</url>
 	<properties>
+		<!-- 项目启动指定的启动类 -->
+		<start-class>io.training.cat.dubbo.provider.ApplicationBootstrap</start-class>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>

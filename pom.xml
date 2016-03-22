@@ -59,6 +59,14 @@
 				<version>${dubbo.version}</version>
 				<exclusions>
 					<exclusion>
+						<artifactId>commons-codec</artifactId>
+						<groupId>commons-codec</groupId>
+					</exclusion>
+					<exclusion>
+						<artifactId>commons-pool</artifactId>
+						<groupId>commons-pool</groupId>
+					</exclusion>
+					<exclusion>
 						<artifactId>curator-framework</artifactId>
 						<groupId>org.apache.curator</groupId>
 					</exclusion>
