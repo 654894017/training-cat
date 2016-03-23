@@ -51,6 +51,13 @@
 				<groupId>com.dianping.cat</groupId>
 				<artifactId>cat-client</artifactId>
 				<version>${cat-client.version}</version>
+
+				<exclusions>
+					<exclusion>
+						<artifactId>aspectjrt</artifactId>
+						<groupId>org.aspectj</groupId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
@@ -81,10 +88,6 @@
 					<exclusion>
 						<artifactId>spring-web</artifactId>
 						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>aopalliance</artifactId>
-						<groupId>aopalliance</groupId>
 					</exclusion>
 					<exclusion>
 						<artifactId>httpclient</artifactId>
