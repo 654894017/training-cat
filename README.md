@@ -18,5 +18,12 @@ training-cat
 > - git clone https://github.com/dangdangdotcom/dubbox.git 下载代码
 > - mvn clean install -Dmaven.test.skip=true
 
-   提示一下，在dubbox配置下默认仓库地址：
-   地方
+
+### install cat
+> **Note:**
+
+> - 一定要按照我上述说的规定安装，尤其是jdk，maven
+> - git clone https://github.com/dianping/cat.git 下载代码
+> - 下载CAT依赖的其他文件，在https://github.com/dianping/cat这个项目下
+> - mvn clean install -Dmaven.test.skip=true
+> - mvn cat:install
