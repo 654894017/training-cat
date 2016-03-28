@@ -27,3 +27,6 @@ training-cat
 > - 下载CAT依赖的其他文件，在https://github.com/dianping/cat这个项目下
 > - mvn clean install -Dmaven.test.skip=true
 > - mvn cat:install
+
+
+MARKDOWN语法太麻烦，具体代码见项目，我把参考文档放上去一份，我手里有的文档
