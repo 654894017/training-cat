@@ -1,0 +1,130 @@
+{
+    "area": [
+        {
+            "id": "1", 
+            "name": "华北"
+        }, 
+        {
+            "id": "2", 
+            "name": "东北"
+        }, 
+        {
+            "id": "3", 
+            "name": "华东"
+        }, 
+        {
+            "id": "4", 
+            "name": "华南"
+        }, 
+        {
+            "id": "5", 
+            "name": "华中"
+        }, 
+        {
+            "id": "6", 
+            "name": "西南"
+        }, 
+        {
+            "id": "7", 
+            "name": "西北"
+        }, 
+        {
+            "id": "8", 
+            "name": "港澳台"
+        }
+    ], 
+    "merchant": [
+        {
+            "id": "3461", 
+            "name": "天财商龙华苑店", 
+            "bname": "1", 
+            "areaId": "5"
+        }, 
+        {
+            "id": "3462", 
+            "name": "天财商龙滨江道店", 
+            "bname": "1", 
+            "areaId": "5"
+        }, 
+        {
+            "id": "3463", 
+            "name": "天财商龙大悦城店", 
+            "bname": "1", 
+            "areaId": "5"
+        }, 
+        {
+            "id": "3464", 
+            "name": "天财商龙塘沽店", 
+            "bname": "1", 
+            "areaId": "5"
+        }, 
+        {
+            "id": "3467", 
+            "name": "天财商龙海光寺店"
+        }, 
+        {
+            "id": "3468", 
+            "name": "天财商龙南京路店", 
+            "bname": "1", 
+            "areaId": "5"
+        }
+    ], 
+    "status": "100", 
+    "checkUpdate": "false", 
+    "jtId": "2424", 
+    "brand": [
+        {
+            "id": "3465", 
+            "name": "天财商龙"
+        }, 
+        {
+            "id": "3466", 
+            "name": "吾享"
+        }
+    ], 
+    "downloadUrl": " http://lbzs.wuuxiang.com:8080/lbzs/app/TCSLBoss.apk", 
+    "code": "3EDAC3462CDF0C12AFCEA5587A7BE003", 
+    "targets": [
+        {
+            "id": "1", 
+            "name": "营业总额"
+        }, 
+        {
+            "id": "3", 
+            "name": "营业收入"
+        }, 
+        {
+            "id": "4", 
+            "name": "客流量"
+        }, 
+        {
+            "id": "5", 
+            "name": "人均消费"
+        }, 
+        {
+            "id": "6", 
+            "name": "开台率"
+        }, 
+        {
+            "id": "7", 
+            "name": "上座率"
+        }, 
+        {
+            "id": "9", 
+            "name": "线下订单数"
+        }, 
+        {
+            "id": "10", 
+            "name": "线上订单数"
+        }
+    ], 
+    "version": "1.2", 
+    "skin": {
+        "id": "xxxxxxxxxxxxxxxxxxxxxxxxxx", 
+        "skinName": "xxxxx", 
+        "url": "xxxxx", 
+        "skinVersion": "xxxxxxxx", 
+        "startDate": "2015-12-12", 
+        "endDate": "2015-12-12"
+    }
+}
